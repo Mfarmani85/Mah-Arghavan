@@ -1,0 +1,227 @@
+<!doctype html>
+<!-- Mah-Arghavan · ماه‌ارغوان · © 2026 Mohammad Farmani. All rights reserved. -->
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ماه‌ارغوان · Mah-Arghavan</title>
+<meta name="description" content="آموزش انگلیسی برای فارسی‌زبانان از A1 تا C2، کاملاً آفلاین، برای اندروید و آیفون · English for Farsi speakers, A1–C2, offline, for Android and iPhone.">
+<meta name="author" content="Mohammad Farmani">
+<meta name="theme-color" content="#1b1036">
+<meta property="og:title" content="ماه‌ارغوان · Mah-Arghavan">
+<meta property="og:description" content="آموزش انگلیسی از A1 تا C2 برای فارسی‌زبانان · کاملاً آفلاین · اندروید و آیفون">
+<meta property="og:image" content="https://mfarmani85.github.io/Mah-Arghavan/img/og.jpg">
+<meta property="og:url" content="https://mfarmani85.github.io/Mah-Arghavan/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="img/icon-192.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&family=Young+Serif&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#140b2b; --bg2:#1b1036; --card:rgba(255,255,255,.055); --line:rgba(255,255,255,.12);
+  --ink:#f4eefc; --mute:#b9acd6; --gold:#f6d98b; --gold2:#e8b84d; --violet:#a77bf3; --teal:#2fb3a3;
+  --f-fa:"Vazirmatn",Tahoma,"Segoe UI",sans-serif; --f-en:"Young Serif",Georgia,serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.85 var(--f-fa);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--gold)}
+.en{font-family:var(--f-en);direction:ltr;unicode-bidi:isolate}
+.sky{position:fixed;inset:0;z-index:-1;background:
+  radial-gradient(1200px 700px at 85% -10%,#4a2a86 0%,transparent 60%),
+  radial-gradient(900px 600px at 0% 30%,#3a1450 0%,transparent 60%),
+  radial-gradient(800px 600px at 60% 110%,#2a1460 0%,transparent 60%),
+  linear-gradient(#170d31,#100823)}
+#stars{position:fixed;inset:0;z-index:-1;pointer-events:none}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+
+/* hero */
+header.hero{position:relative;padding:56px 0 28px;display:grid;grid-template-columns:1.25fr .75fr;gap:24px;align-items:center}
+.brand{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+.brand img{width:56px;height:56px;border-radius:16px;box-shadow:0 6px 24px rgba(0,0,0,.4)}
+.brand span{color:var(--mute);font-size:14px}
+h1{margin:0;font-weight:800;font-size:clamp(44px,8vw,76px);line-height:1.15;color:var(--gold);text-shadow:0 0 28px rgba(246,217,139,.35)}
+h1 .en{display:block;font-weight:400;font-size:.42em;color:#e6dafc;text-shadow:none;margin-top:4px}
+.lead{font-size:clamp(17px,2.4vw,20px);color:#e8def9;margin:18px 0 6px;max-width:34em}
+.lead-en{color:var(--mute);font-size:15px;margin:0;text-align:right}
+h1 .en{text-align:right}
+.moon{justify-self:center;width:min(300px,70vw);aspect-ratio:350/440;background:url(img/moon.jpg) center/cover;
+  -webkit-mask:radial-gradient(closest-side,#000 62%,transparent 100%);mask:radial-gradient(closest-side,#000 62%,transparent 100%);opacity:.95}
+.star{position:absolute;color:var(--gold);filter:drop-shadow(0 0 10px var(--gold2));animation:tw 3.2s ease-in-out infinite}
+@keyframes tw{50%{opacity:.45;transform:scale(.85)}}
+
+/* get cards */
+.get{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:26px 0 10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.card h2{margin:0 0 2px;font-size:22px;display:flex;align-items:center;gap:10px}
+.card h2 svg{width:28px;height:28px;flex:none}
+.card .sub{color:var(--mute);font-size:14px;margin:0 0 16px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:14px 18px;border-radius:14px;font:700 17px var(--f-fa);text-decoration:none;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn.gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#2a1748;box-shadow:0 8px 26px rgba(232,184,77,.28)}
+.btn.violet{background:linear-gradient(135deg,#b48cf7,#7d4fd6);color:#fff;box-shadow:0 8px 26px rgba(125,79,214,.32)}
+.btn small{font-weight:500;opacity:.8;font-size:13px}
+ol.steps{margin:16px 0 0;padding:0 1.3em 0 0;color:#e8def9;font-size:15px}
+ol.steps li{margin:4px 0}
+.note{font-size:13.5px;color:var(--mute);margin:14px 0 0;line-height:1.75}
+.note b{color:#e8def9;font-weight:500}
+.chip{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:1px 10px;font-size:12.5px;color:var(--mute);margin-inline-end:6px}
+
+/* sections */
+section{margin:58px 0}
+h3{font-size:26px;margin:0 0 4px;color:var(--gold);font-weight:700}
+h3 + .en{color:var(--mute);font-size:14px;margin:0 0 22px;display:block}
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.feat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px 18px 16px}
+.feat i{font-style:normal;font-size:22px;display:block;margin-bottom:4px}
+.feat b{display:block;font-size:17px;margin-bottom:2px}
+.feat p{margin:0;color:var(--mute);font-size:14.5px;line-height:1.75}
+
+.shots{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 16px;scrollbar-width:thin;scrollbar-color:#5b3f99 transparent}
+.shots img{flex:none;width:220px;aspect-ratio:9/16;border-radius:18px;border:1px solid var(--line);scroll-snap-align:start;box-shadow:0 10px 30px rgba(0,0,0,.35);background:#221446}
+
+table{width:100%;border-collapse:collapse;font-size:14px;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+th,td{padding:12px 14px;text-align:start;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child th,tr:last-child td{border-bottom:0}
+th{color:var(--mute);font-weight:500;width:34%}
+code{font:12.5px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;word-break:break-all;direction:ltr;display:block;text-align:left;color:#f1e7ff}
+
+.dedic{text-align:center;padding:34px 20px;border-radius:26px;background:radial-gradient(600px 220px at 50% 0%,rgba(167,123,243,.22),transparent 70%),var(--card);border:1px solid var(--line)}
+.dedic .s{font-size:30px;color:var(--gold);filter:drop-shadow(0 0 12px var(--gold2))}
+.dedic p{margin:6px 0}
+.dedic .en{display:block;font-size:19px;color:#efe6ff;line-height:1.6}
+.dedic .name{font-family:var(--f-en);font-size:40px;color:var(--gold);line-height:1.3;margin:6px 0}
+
+footer{border-top:1px solid var(--line);margin-top:60px;padding:26px 0 40px;color:var(--mute);font-size:14px;text-align:center}
+footer p{margin:4px 0}
+
+@media (max-width:820px){
+  header.hero{grid-template-columns:1fr;padding-top:34px;text-align:center}
+  .brand{justify-content:center}
+  .lead{margin-inline:auto}
+  .lead-en,h1 .en{text-align:center}
+  .moon{grid-row:1;width:190px}
+  .get{grid-template-columns:1fr}
+  .feats{grid-template-columns:1fr 1fr}
+}
+@media (max-width:520px){
+  .wrap{padding:0 16px}
+  .feats{grid-template-columns:1fr}
+  .shots img{width:180px}
+  th{width:auto;display:block;border-bottom:0;padding-bottom:0}
+  td{display:block}
+}
+@media (prefers-reduced-motion:reduce){.star{animation:none}}
+</style>
+</head>
+<body>
+<div class="sky"></div>
+<canvas id="stars" aria-hidden="true"></canvas>
+
+<div class="wrap">
+<header class="hero">
+  <div>
+    <div class="brand"><img src="img/icon-192.png" alt="" width="56" height="56"><span>نسخه‌ی ۱٫۵٫۰ · ساخته‌ی محمد فرمانی<br><span class="en">v1.5.0 · by Mohammad F</span></span></div>
+    <h1>ماه‌ارغوان<span class="en">Mah-Arghavan</span></h1>
+    <p class="lead">آموزش کامل زبان انگلیسی برای فارسی‌زبانان، از الفبا تا سطح C2؛ واژه، گرامر، تلفظ، کتابخانه و آیلتس، همه بدون اینترنت.</p>
+    <p class="lead-en en">A complete English course for Farsi speakers, A1–C2. Works fully offline.</p>
+  </div>
+  <div class="moon" role="img" aria-label="ماه"></div>
+  <span class="star" style="top:70px;left:9%;font-size:26px">✦</span>
+</header>
+
+<div class="get" id="get">
+  <div class="card">
+    <h2><svg viewBox="0 0 24 24" fill="#7fd99a" aria-hidden="true"><path d="M17.6 9.48l1.84-3.18a.38.38 0 0 0-.66-.38l-1.86 3.22a11.4 11.4 0 0 0-9.84 0L5.22 5.92a.38.38 0 0 0-.66.38L6.4 9.48A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>اندروید <span class="en" style="font-size:15px;color:var(--mute)">Android</span></h2>
+    <p class="sub">اندروید ۷ و جدیدتر · ساخته‌شده برای اندروید ۱۶ · حدود ۳۶ مگابایت</p>
+    <a class="btn gold" href="https://github.com/Mfarmani85/Mah-Arghavan/raw/main/Mah-Arghavan.apk" download>⬇ دانلود APK <small class="en">Download</small></a>
+    <ol class="steps">
+      <li>فایل <span class="en">Mah-Arghavan.apk</span> را دانلود کنید.</li>
+      <li>اگر پرسید، «نصب برنامه‌های ناشناس» را برای مرورگر یا مدیر فایل مجاز کنید.</li>
+      <li>فایل را باز کنید و «نصب» را بزنید.</li>
+    </ol>
+    <p class="note"><b>یادآور روزانه</b>، پخش آفلاین ترانه‌ها و تلفظ انگلیسی در نسخه‌ی اندروید هست. برای صدای انگلیسی: تنظیمات ← سیستم ← تبدیل متن به گفتار ← <span class="en">Google</span> ← نصب صدای انگلیسی.</p>
+    <p class="note"><b>نسخه‌ی قدیمی‌تر دارید؟</b> چون کلید امضا عوض شده، اول در برنامه از «پشتیبان‌گیری» استفاده کنید، نسخه‌ی قبلی را حذف کنید، ۱٫۵٫۰ را نصب کنید و پشتیبان را بازیابی کنید.</p>
+  </div>
+
+  <div class="card">
+    <h2><svg viewBox="0 0 24 24" fill="#e8e3f2" aria-hidden="true"><path d="M16.37 12.75c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.77-3.32-1.8-1.41-.14-2.76.83-3.47.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.28-1.6 2.78-.41 6.9 1.15 9.16.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.66zM14.1 6c.63-.77 1.06-1.83.94-2.9-.91.04-2.02.61-2.67 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.06-.52 2.69-1.27z"/></svg>آیفون و آیپد <span class="en" style="font-size:15px;color:var(--mute)">iPhone</span></h2>
+    <p class="sub">بدون اپ‌استور؛ به‌صورت برنامه روی صفحه‌ی اصلی نصب می‌شود</p>
+    <a class="btn violet" href="app/">✦ باز کردن ماه‌ارغوان <small class="en">Open the app</small></a>
+    <ol class="steps">
+      <li>این صفحه را در <b>Safari</b> باز کنید و «باز کردن ماه‌ارغوان» را بزنید.</li>
+      <li>دکمه‌ی <b>اشتراک‌گذاری</b> <span aria-hidden="true">⎋</span> را بزنید و <b>Add to Home Screen</b> را انتخاب کنید.</li>
+      <li><b>Add</b> را بزنید و برنامه را از صفحه‌ی اصلی باز کنید. بعد از اولین اجرا، بدون اینترنت هم کار می‌کند.</li>
+    </ol>
+    <p class="note"><b>ترانه‌ها</b> بعد از اولین اجرا در پس‌زمینه ذخیره می‌شوند (حدود ۳۴ مگابایت)؛ بار اول چند دقیقه با اینترنت بمانید. یادآور روزانه فقط در اندروید است. برای صدای انگلیسی: تنظیمات ← دسترسی‌پذیری ← محتوای گفتاری ← صداها ← انگلیسی.</p>
+    <p class="note"><b>پیشرفت شما فقط روی همین دستگاه می‌ماند.</b> هر چند وقت یک بار از «پشتیبان‌گیری» در تنظیمات برنامه استفاده کنید.</p>
+  </div>
+</div>
+
+<section>
+  <h3>چه چیزهایی دارد؟</h3><span class="en">What's inside</span>
+  <div class="feats">
+    <div class="feat"><i>📚</i><b>بیش از ۶٬۰۰۰ واژه</b><p>شش سطح A1 تا C2، با معنی فارسی، تلفظ، آوانگاری و نمونه‌جمله؛ کارت واژه و مرور روزانه‌ی لایتنر.</p></div>
+    <div class="feat"><i>✍️</i><b>۴۸ درس گرامر</b><p>توضیح فارسی، ساختار، اشتباه‌های رایج، تست و تمرین نوشتنی، و جدول‌های مرجع.</p></div>
+    <div class="feat"><i>🎙️</i><b>تلفظ و صحبت</b><p>شنیدن هر واژه و جمله با لهجه‌های مختلف و پخش آهسته؛ تمرین با میکروفون.</p></div>
+    <div class="feat"><i>📖</i><b>کتابخانه</b><p>کتاب، داستان‌های درجه‌بندی‌شده، مجله، روزنامه و ترانه، با ترجمه‌ی فارسی هر بند.</p></div>
+    <div class="feat"><i>🎓</i><b>آیلتس</b><p>تمرین چهار مهارت و سه آزمون آزمایشی کامل با زمان‌سنج و نمره‌ی باند.</p></div>
+    <div class="feat"><i>🔒</i><b>خصوصی و آفلاین</b><p>پروفایل رمزدار برای هر نفر؛ بدون اینترنت، بدون تبلیغ و بدون ردیابی. هیچ داده‌ای از گوشی خارج نمی‌شود.</p></div>
+  </div>
+</section>
+
+<section>
+  <h3>تصویرها</h3><span class="en">Screenshots</span>
+  <div class="shots">
+    <img src="img/shot-1.jpg" alt="صفحه‌ی خانه" loading="lazy">
+    <img src="img/shot-2.jpg" alt="کارت‌های واژه" loading="lazy">
+    <img src="img/shot-3.jpg" alt="درس گرامر" loading="lazy">
+    <img src="img/shot-4.jpg" alt="آزمون آیلتس" loading="lazy">
+    <img src="img/shot-5.jpg" alt="کتابخانه" loading="lazy">
+    <img src="img/shot-6.jpg" alt="پروفایل" loading="lazy">
+    <img src="img/shot-7.jpg" alt="به یاد سولماز" loading="lazy">
+    <img src="img/shot-8.jpg" alt="کهکشان سولماز" loading="lazy">
+  </div>
+</section>
+
+<section>
+  <h3>نسخه‌ی من اصلی است؟</h3><span class="en">Is my copy official?</span>
+  <p style="margin:0 0 14px;color:#e8def9;font-size:15px">برنامه‌ی اندروید با کلید شخصی محمد فرمانی امضا شده است. در صفحه‌ی «درباره»ی برنامه، نسخه‌ی اصلی نشان سبز <b style="color:#7fd99a">«✓ نسخه‌ی اصلی، امضاشده با کلید محمد فرمانی»</b> را نشان می‌دهد؛ نسخه‌ای که کس دیگری تغییر داده یا دوباره امضا کرده، هشدار می‌دهد. فقط از همین صفحه دانلود کنید.</p>
+  <table>
+    <tr><th>امضاکننده · Signer</th><td><code>CN=Mohammad Farmani, OU=Mah-Arghavan, O=Mohammad Farmani</code></td></tr>
+    <tr><th>SHA-256 گواهی امضا · Signing certificate</th><td><code>9b2b8cab2730c9be150d77bd9d176cc2a6fc38009cab2123c8f8a4f14e876080</code></td></tr>
+    <tr><th>SHA-256 فایل <span class="en">Mah-Arghavan.apk</span> (v1.5.0)</th><td><code id="apksha">def7cf3b29258ddb6089c5e2165491f45a8b874e41be21f2ec48a4ca2c044e9c</code></td></tr>
+  </table>
+</section>
+
+<section class="dedic">
+  <div class="s">✦</div>
+  <p>این برنامه به یاد سولماز ساخته شده است</p>
+  <span class="en">Created in loving memory of</span>
+  <div class="name">Solmaz</div>
+  <span class="en" style="font-size:16px;color:var(--mute)">my one &amp; only Star in the Milky Galaxy</span>
+</section>
+
+<footer>
+  <p>ساخته‌ی <b style="color:var(--ink)">محمد فرمانی</b> · <span class="en">Created by Mohammad F</span></p>
+  <p>© ۲۰۲۶ محمد فرمانی · همه‌ی حقوق محفوظ است · <span class="en">© 2026 Mohammad Farmani. All rights reserved.</span></p>
+  <p><a href="https://github.com/Mfarmani85/Mah-Arghavan/blob/main/LICENSE">مجوز · License</a> · <a href="https://github.com/Mfarmani85/Mah-Arghavan">GitHub</a></p>
+</footer>
+</div>
+
+<script>
+(function(){
+  var c=document.getElementById('stars'),x=c.getContext('2d'),S=[],w,h,dpr=Math.min(2,window.devicePixelRatio||1);
+  var still=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function size(){w=innerWidth;h=innerHeight;c.width=w*dpr;c.height=h*dpr;c.style.width=w+'px';c.style.height=h+'px';x.setTransform(dpr,0,0,dpr,0,0);
+    S=[];var n=Math.round(w*h/5200);for(var i=0;i<n;i++)S.push({x:Math.random()*w,y:Math.random()*h,r:Math.random()*1.25+.25,p:Math.random()*6.28,s:.4+Math.random()*1.4,g:Math.random()<.08});}
+  function draw(t){x.clearRect(0,0,w,h);for(var i=0;i<S.length;i++){var s=S[i],a=.35+.65*Math.abs(Math.sin(s.p+t*.001*s.s));
+    x.globalAlpha=a;x.fillStyle=s.g?'#f6d98b':'#fff';x.beginPath();x.arc(s.x,s.y,s.r,0,6.283);x.fill();}
+    x.globalAlpha=1;if(!still)requestAnimationFrame(draw);}
+  size();addEventListener('resize',size);requestAnimationFrame(draw);
+})();
+</script>
+</body>
+</html>

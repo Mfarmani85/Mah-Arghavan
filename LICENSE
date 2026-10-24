@@ -1,0 +1,52 @@
+Mah-Arghavan (ماه‌ارغوان) — English for Farsi Speakers
+Copyright (c) 2026 Mohammad Farmani (محمد فرمانی). All rights reserved.
+
+PROPRIETARY LICENSE
+
+Mah-Arghavan, including its source code, compiled applications (Android APK
+and iPhone web app), user interface design, graphics, icons, artwork,
+vocabulary data, example sentences, exercises, grammar explanations, stories,
+texts, poems, lyrics, music, name and documentation (together, "the
+Software"), is the exclusive property of Mohammad Farmani and is protected by
+copyright law and international treaties.
+
+The source code is private and is not published. The files in this
+repository are compiled, minified builds. No license or right is granted to
+anyone except as written below.
+
+You MAY:
+  - download the official Mah-Arghavan.apk from
+    https://github.com/Mfarmani85/Mah-Arghavan and install it on your own
+    devices for personal, non-commercial use;
+  - use the official Mah-Arghavan web app at
+    https://mfarmani85.github.io/Mah-Arghavan/app/ for personal,
+    non-commercial use.
+
+You MAY NOT, without prior written permission from Mohammad Farmani:
+  - copy, modify, translate, adapt or create derivative works of the
+    Software or any part of it, including its texts, poems, lyrics, music,
+    artwork, vocabulary and exercise content;
+  - redistribute, sell, rent, publish, host, upload or share the Software, or
+    any modified version of it, including on app stores or websites;
+  - remove, alter or hide any copyright notice, author name, dedication or
+    this license;
+  - decompile, de-minify, reverse-engineer, re-sign, repackage or rebrand
+    the Software, or publish it under another name or author.
+
+Forking or copying this repository on GitHub does not grant any of the
+rights above.
+
+The official Android app is signed by Mohammad Farmani:
+  CN=Mohammad Farmani, OU=Mah-Arghavan, O=Mohammad Farmani
+  Certificate SHA-256:
+  9b2b8cab2730c9be150d77bd9d176cc2a6fc38009cab2123c8f8a4f14e876080
+A copy signed with any other key is not an official copy.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. IN NO EVENT
+SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING
+FROM THE USE OF THE SOFTWARE.
+
+For permission requests, contact Mohammad Farmani through
+https://github.com/Mfarmani85
+
+In loving memory of Solmaz.
