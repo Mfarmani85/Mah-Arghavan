@@ -11,7 +11,7 @@ Mah-Arghavan is a complete English course for Farsi speakers: 6,000+ words, 48 g
 
 ## Android
 
-Install the official app from [`Mah-Arghavan.apk`](Mah-Arghavan.apk) (version 1.5.0, Android 7.0 or newer, built for Android 16):
+Install the official app from [`Mah-Arghavan.apk`](Mah-Arghavan.apk) (version 1.5.1, Android 7.0 or newer, built for Android 16):
 
 1. Download the APK and tap **Open** when the download finishes.
 2. If asked, turn on **Allow from this source** for your browser (first time only).
@@ -20,7 +20,7 @@ Install the official app from [`Mah-Arghavan.apk`](Mah-Arghavan.apk) (version 1.
 
 ![Android install steps](docs/img/android-install-steps.jpg)
 
-If you have an older version installed: the signing key changed in 1.5.0, so first use **Backup** in the app, uninstall the old version, install 1.5.0, then **Restore**.
+If you have 1.5.0, install 1.5.1 straight over it; your progress is kept. If you have a version older than 1.5.0: the signing key changed in 1.5.0, so first use **Backup** in the app, uninstall the old version, install the new one, then **Restore**.
 
 For spoken English, install an English voice: Settings → System → Text-to-speech → Google Speech Services → Install voice data → English.
 
@@ -44,7 +44,7 @@ The official Android app is signed by Mohammad Farmani. On the app's About page,
 |---|---|
 | Signer | CN=Mohammad Farmani, OU=Mah-Arghavan, O=Mohammad Farmani |
 | Signing certificate SHA-256 | `9b2b8cab2730c9be150d77bd9d176cc2a6fc38009cab2123c8f8a4f14e876080` |
-| Mah-Arghavan.apk SHA-256 (v1.5.0) | `def7cf3b29258ddb6089c5e2165491f45a8b874e41be21f2ec48a4ca2c044e9c` |
+| Mah-Arghavan.apk SHA-256 (v1.5.1) | `abe9df8328221744271acacf86902a73baa6f142f63ea864b75fb47b719ea39d` |
 
 ## Copyright and license
 
