@@ -1,0 +1,8 @@
+# Mah-Arghavan · © 2026 Mohammad Farmani · SHA-256 checksums of the official files on this site
+abe9df8328221744271acacf86902a73baa6f142f63ea864b75fb47b719ea39d  Mah-Arghavan.apk
+5a9bd1b8b242caac4215047170528b2215679e0aa0a9d4e593da6fb9e84403e8  app/apple-touch-icon.png
+b8417ad0b670bbff70d9000ae41188844c9e936f9663df2e59a62f971e60918d  app/icon-192.png
+0f0006236eee9922e870c8c7905a0ff0019120c1169643a5358fc33d415ebf7a  app/icon-512.png
+985178e0f8535a1c4f76b00cb6e19eb9a455569ce9b8876a51a87852dd20aec5  app/index.html
+51bc7583bf467d741b9a1767d3127f4c42549a4a50bc27f938583a891abad14b  app/manifest.webmanifest
+ab6c6a182e812f8b4e3d283713eef87b571153b90657db45e248baece4192048  app/sw.js
