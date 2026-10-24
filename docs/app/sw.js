@@ -1,7 +1,7 @@
 /*! Mah-Arghavan · ماه‌ارغوان · © 2026 Mohammad Farmani. All rights reserved. */
 // Offline cache for the iPhone / web app. The app shell is cached on install; the songs are cached
 // in the background and served with byte ranges, which Safari needs to play audio offline.
-const CORE = "mah-arghavan-1.5.0-6cb8351ff6";
+const CORE = "mah-arghavan-1.5.0-12678044ab";
 const SONGS = "mah-arghavan-songs-1";
 const CORE_FILES = ["./", "index.html", "manifest.webmanifest", "icon-192.png", "icon-512.png", "apple-touch-icon.png"];
 const SONG_FILES = ["songs/beyond.mp3","songs/lightitup-1.mp3","songs/lightitup-2.mp3","songs/mystar-ambient.mp3","songs/mystar-meditation.mp3","songs/star-ta.mp3","songs/star.mp3","songs/unfading.mp3"];

@@ -20,8 +20,12 @@ For spoken English, install an English voice: Settings → System → Text-to-sp
 ## iPhone
 
 1. Open **https://mfarmani85.github.io/Mah-Arghavan/app/** in **Safari**.
-2. Tap the **Share** button, then **Add to Home Screen**, then **Add**.
-3. Open Mah-Arghavan from your home screen. After the first launch it works offline; the songs download in the background the first time (about 34 MB).
+2. Tap the **•••** button next to the address bar, then **Share**. (iOS 18 or older: tap the **Share** button at the bottom of the screen.)
+3. Scroll down and tap **Add to Home Screen**.
+4. Keep **Open as Web App** on and tap **Add**.
+5. Open Mah-Arghavan from your Home Screen. After the first launch it works offline; the songs download in the background the first time (about 34 MB).
+
+![iPhone install steps](docs/img/iphone-install-steps.jpg)
 
 The daily reminder is available in the Android app only. Progress stays on the device, so use **Backup** in Settings from time to time.
 
