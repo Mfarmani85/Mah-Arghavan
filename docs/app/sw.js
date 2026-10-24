@@ -1,7 +1,8 @@
 /*! Mah-Arghavan · ماه‌ارغوان · © 2026 Mohammad Farmani. All rights reserved. */
 // Offline cache for the iPhone / web app. The app shell is cached on install; the songs are cached
 // in the background and served with byte ranges, which Safari needs to play audio offline.
-const CORE = "mah-arghavan-1.5.0-12678044ab";
+/* Only this app's old caches are removed: all apps on mfarmani85.github.io share one cache storage. */
+const CORE = "mah-arghavan-1.5.0-c439559da4";
 const SONGS = "mah-arghavan-songs-2";
 const CORE_FILES = ["./", "index.html", "manifest.webmanifest", "icon-192.png", "icon-512.png", "apple-touch-icon.png"];
 const SONG_FILES = ["songs/beyond.mp3","songs/lightitup-1.mp3","songs/lightitup-2.mp3","songs/mystar-ambient.mp3","songs/mystar-meditation.mp3","songs/star-ta.mp3","songs/star.mp3","songs/unfading.mp3"];
@@ -9,7 +10,7 @@ self.addEventListener("install", e => {
   e.waitUntil(caches.open(CORE).then(c => c.addAll(CORE_FILES)).then(() => self.skipWaiting()));
 });
 self.addEventListener("activate", e => {
-  e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k !== CORE && k !== SONGS).map(k => caches.delete(k)))).then(() => self.clients.claim()));
+  e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k.startsWith("mah-arghavan-") && k !== CORE && k !== SONGS).map(k => caches.delete(k)))).then(() => self.clients.claim()));
 });
 async function warmSongs() {
   const c = await caches.open(SONGS);
