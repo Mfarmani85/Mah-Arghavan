@@ -11,7 +11,14 @@ Mah-Arghavan is a complete English course for Farsi speakers: 6,000+ words, 48 g
 
 ## Android
 
-Install the official app from [`Mah-Arghavan.apk`](Mah-Arghavan.apk) (version 1.5.0, Android 7.0 or newer, built for Android 16). On your phone, allow "Install unknown apps" for your browser or file manager, then open the APK.
+Install the official app from [`Mah-Arghavan.apk`](Mah-Arghavan.apk) (version 1.5.0, Android 7.0 or newer, built for Android 16):
+
+1. Download the APK and tap **Open** when the download finishes.
+2. If asked, turn on **Allow from this source** for your browser (first time only).
+3. If Google Play Protect shows "App blocked to protect your device", tap **More details**, then **Install anyway**. It only warns because the app is installed from outside Google Play.
+4. Tap **Install**, then **Open**.
+
+![Android install steps](docs/img/android-install-steps.jpg)
 
 If you have an older version installed: the signing key changed in 1.5.0, so first use **Backup** in the app, uninstall the old version, install 1.5.0, then **Restore**.
 
