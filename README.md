@@ -52,6 +52,8 @@ Mah-Arghavan, including its source code, apps, texts, poems, lyrics, music, artw
 
 This is **not** open-source software, and its source code is private. The files here are compiled, minified builds. You may use the official apps for personal use, but you may not copy, modify, redistribute, rebrand, re-sign, host or publish Mah-Arghavan or any part of it without written permission from Mohammad Farmani. Forking this repository does not grant any rights. See [LICENSE](LICENSE) for the full terms.
 
+**Music:** all songs in the app (words, music and recordings) are by Mohammad F (Mohammad Farmani). They are listed, with file fingerprints and lyrics, in the [Music Copyright Register](COPYRIGHT-MUSIC.md). They may not be uploaded, used, remixed or claimed by anyone else.
+
 ---
 
 ✦ Created in loving memory of Solmaz, my one & only Star in the Milky Galaxy.
